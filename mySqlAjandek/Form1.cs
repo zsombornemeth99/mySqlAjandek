@@ -41,6 +41,7 @@ namespace mySqlAjandek
             comm.CommandText = sql;
             using (var reader = comm.ExecuteReader())
             {
+                lstBx_ajandek.Items.Clear();
                 while (reader.Read())
                 {
                     int id = reader.GetInt32("id");
@@ -56,8 +57,65 @@ namespace mySqlAjandek
                         uzlet = null;
                     }
                     var ajandek = new Ajandek(id, nev, uzlet);
-                    lstBx_ajandek.Items.Add(ajandek.Nev);
+                    lstBx_ajandek.Items.Add(ajandek);
                 }
+            }
+        }
+
+        private void bttn_felvesz_Click(object sender, EventArgs e)
+        {
+            if (bttn_felvesz.Text == "Felvesz")
+            {
+                if (txtBx_nev.Text != "")
+                {
+                    var insertComm = conn.CreateCommand();
+
+                    insertComm.CommandText = @"
+                    INSERT INTO ajandek (nev, uzlet)
+                    VALUES (@nev,@uzlet)";
+
+                    insertComm.Parameters.AddWithValue("@nev", txtBx_nev.Text);
+                    insertComm.Parameters.AddWithValue("@uzlet", txtBx_uzlet.Text == "" ? "Saját készítésű" : txtBx_uzlet.Text);
+
+                    var muvelet = insertComm.ExecuteNonQuery();
+                    if (muvelet >= 1)
+                        MessageBox.Show("Sikeres adatfelvétel", "Siker!");
+                    else
+                        MessageBox.Show("Nem sikerült az adatot beszúrni!", "Hiba!");
+
+                    txtBx_nev.Text = "";
+                    txtBx_uzlet.Text = "";
+                    AdatBetoltes();
+                }
+                else MessageBox.Show("Ellenőrízze, hogy mindent kitöltött e!", "Hiba!");
+            }
+        }
+
+        private void lstBx_ajandek_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            if (lstBx_ajandek.SelectedItem != null)
+            {
+                var result = MessageBox.Show("Biztos törli a kijelölt elemet?", "Törlés", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    var insertComm = conn.CreateCommand();
+
+                    insertComm.CommandText = @"
+                    DELETE FROM ajandek 
+                    WHERE id=@szam";
+
+                    var szam = (Ajandek)lstBx_ajandek.SelectedItem;
+                    insertComm.Parameters.AddWithValue("@szam", szam.Id);
+
+                    var muvelet = insertComm.ExecuteNonQuery();
+                    if (muvelet >= 1)
+                    {
+                        MessageBox.Show("Sikeres törlés", "Siker!");
+                        lstBx_ajandek.Items.Remove(lstBx_ajandek.SelectedItem);
+                    }
+                    else MessageBox.Show("Nem sikerült az adatot törölni!", "Hiba!");                 
+                }
+
             }
         }
     }

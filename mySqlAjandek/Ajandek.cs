@@ -15,6 +15,11 @@ namespace mySqlAjandek
             Id = id;
             Nev = nev;
             Uzlet = uzlet;
-        } 
+        }
+
+        public override string ToString()
+        {
+            return Nev;
+        }
     }
 }

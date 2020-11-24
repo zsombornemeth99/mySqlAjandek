@@ -35,9 +35,9 @@ namespace mySqlAjandek
             this.lstBx_ajandek = new System.Windows.Forms.ListBox();
             this.bttn_felvesz = new System.Windows.Forms.Button();
             this.grpBx_adatok = new System.Windows.Forms.GroupBox();
-            this.lbl_id = new System.Windows.Forms.Label();
-            this.lbl_nev = new System.Windows.Forms.Label();
             this.lbl_uzlet = new System.Windows.Forms.Label();
+            this.lbl_nev = new System.Windows.Forms.Label();
+            this.lbl_id = new System.Windows.Forms.Label();
             this.grpBx_adatok.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,12 +56,14 @@ namespace mySqlAjandek
             this.lstBx_ajandek.FormattingEnabled = true;
             resources.ApplyResources(this.lstBx_ajandek, "lstBx_ajandek");
             this.lstBx_ajandek.Name = "lstBx_ajandek";
+            this.lstBx_ajandek.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lstBx_ajandek_MouseDoubleClick);
             // 
             // bttn_felvesz
             // 
             resources.ApplyResources(this.bttn_felvesz, "bttn_felvesz");
             this.bttn_felvesz.Name = "bttn_felvesz";
             this.bttn_felvesz.UseVisualStyleBackColor = true;
+            this.bttn_felvesz.Click += new System.EventHandler(this.bttn_felvesz_Click);
             // 
             // grpBx_adatok
             // 
@@ -72,20 +74,20 @@ namespace mySqlAjandek
             this.grpBx_adatok.Name = "grpBx_adatok";
             this.grpBx_adatok.TabStop = false;
             // 
-            // lbl_id
+            // lbl_uzlet
             // 
-            resources.ApplyResources(this.lbl_id, "lbl_id");
-            this.lbl_id.Name = "lbl_id";
+            resources.ApplyResources(this.lbl_uzlet, "lbl_uzlet");
+            this.lbl_uzlet.Name = "lbl_uzlet";
             // 
             // lbl_nev
             // 
             resources.ApplyResources(this.lbl_nev, "lbl_nev");
             this.lbl_nev.Name = "lbl_nev";
             // 
-            // lbl_uzlet
+            // lbl_id
             // 
-            resources.ApplyResources(this.lbl_uzlet, "lbl_uzlet");
-            this.lbl_uzlet.Name = "lbl_uzlet";
+            resources.ApplyResources(this.lbl_id, "lbl_id");
+            this.lbl_id.Name = "lbl_id";
             // 
             // FormAjandek
             // 
