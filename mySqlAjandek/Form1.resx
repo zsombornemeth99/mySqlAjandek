@@ -1,64 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
+﻿<root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -117,4 +57,229 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing.Primitives" name="System.Drawing.Primitives, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtBx_nev.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 12</value>
+  </data>
+  <data name="txtBx_nev.PlaceholderText" xml:space="preserve">
+    <value>Írja be az ajándék nevét..</value>
+  </data>
+  <data name="txtBx_nev.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>179, 27</value>
+  </data>
+  <assembly alias="System.Private.CoreLib" name="System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e" />
+  <data name="txtBx_nev.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtBx_nev.Name" xml:space="preserve">
+    <value>txtBx_nev</value>
+  </data>
+  <data name="&gt;&gt;txtBx_nev.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBx_nev.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtBx_nev.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtBx_uzlet.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 45</value>
+  </data>
+  <data name="txtBx_uzlet.PlaceholderText" xml:space="preserve">
+    <value>Írja be az üzlet nevét..</value>
+  </data>
+  <data name="txtBx_uzlet.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>179, 27</value>
+  </data>
+  <data name="txtBx_uzlet.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtBx_uzlet.Name" xml:space="preserve">
+    <value>txtBx_uzlet</value>
+  </data>
+  <data name="&gt;&gt;txtBx_uzlet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBx_uzlet.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtBx_uzlet.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lstBx_ajandek.ItemHeight" type="System.Int32, System.Private.CoreLib">
+    <value>20</value>
+  </data>
+  <data name="lstBx_ajandek.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 168</value>
+  </data>
+  <data name="lstBx_ajandek.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>179, 244</value>
+  </data>
+  <data name="lstBx_ajandek.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lstBx_ajandek.Name" xml:space="preserve">
+    <value>lstBx_ajandek</value>
+  </data>
+  <data name="&gt;&gt;lstBx_ajandek.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstBx_ajandek.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lstBx_ajandek.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bttn_felvesz.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>12, 78</value>
+  </data>
+  <data name="bttn_felvesz.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>179, 40</value>
+  </data>
+  <data name="bttn_felvesz.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>3</value>
+  </data>
+  <data name="bttn_felvesz.Text" xml:space="preserve">
+    <value>Felvesz</value>
+  </data>
+  <data name="&gt;&gt;bttn_felvesz.Name" xml:space="preserve">
+    <value>bttn_felvesz</value>
+  </data>
+  <data name="&gt;&gt;bttn_felvesz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bttn_felvesz.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bttn_felvesz.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_uzlet.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lbl_uzlet.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>7, 178</value>
+  </data>
+  <data name="lbl_uzlet.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>46, 20</value>
+  </data>
+  <data name="lbl_uzlet.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>2</value>
+  </data>
+  <data name="lbl_uzlet.Text" xml:space="preserve">
+    <value>Üzlet:</value>
+  </data>
+  <data name="&gt;&gt;lbl_uzlet.Name" xml:space="preserve">
+    <value>lbl_uzlet</value>
+  </data>
+  <data name="&gt;&gt;lbl_uzlet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_uzlet.Parent" xml:space="preserve">
+    <value>grpBx_adatok</value>
+  </data>
+  <data name="&gt;&gt;lbl_uzlet.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lbl_nev.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lbl_nev.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>7, 112</value>
+  </data>
+  <data name="lbl_nev.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>38, 20</value>
+  </data>
+  <data name="lbl_nev.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>1</value>
+  </data>
+  <data name="lbl_nev.Text" xml:space="preserve">
+    <value>Név:</value>
+  </data>
+  <data name="&gt;&gt;lbl_nev.Name" xml:space="preserve">
+    <value>lbl_nev</value>
+  </data>
+  <data name="&gt;&gt;lbl_nev.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_nev.Parent" xml:space="preserve">
+    <value>grpBx_adatok</value>
+  </data>
+  <data name="&gt;&gt;lbl_nev.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_id.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="lbl_id.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>7, 46</value>
+  </data>
+  <data name="lbl_id.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>27, 20</value>
+  </data>
+  <data name="lbl_id.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>0</value>
+  </data>
+  <data name="lbl_id.Text" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+  <data name="&gt;&gt;lbl_id.Name" xml:space="preserve">
+    <value>lbl_id</value>
+  </data>
+  <data name="&gt;&gt;lbl_id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_id.Parent" xml:space="preserve">
+    <value>grpBx_adatok</value>
+  </data>
+  <data name="&gt;&gt;lbl_id.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="grpBx_adatok.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>234, 168</value>
+  </data>
+  <data name="grpBx_adatok.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>179, 244</value>
+  </data>
+  <data name="grpBx_adatok.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>4</value>
+  </data>
+  <data name="grpBx_adatok.Text" xml:space="preserve">
+    <value>Adatok</value>
+  </data>
+  <data name="&gt;&gt;grpBx_adatok.Name" xml:space="preserve">
+    <value>grpBx_adatok</value>
+  </data>
+  <data name="&gt;&gt;grpBx_adatok.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpBx_adatok.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpBx_adatok.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing.Primitives">
+    <value>8, 20</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>487, 450</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Ajándék</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormAjandek</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
