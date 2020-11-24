@@ -140,7 +140,7 @@ namespace mySqlAjandek
                 bttn_torles.Enabled = true;
                 lbl_id.Text = $"ID: {ajandek.Id}";
                 lbl_nev.Text = $"Név: {ajandek.Nev}";
-                lbl_uzlet.Text = $"Üzlet: {ajandek.Uzlet}";
+                lbl_uzlet.Text = $"Üzlet: {(ajandek.Uzlet == null?"Saját készítésű":ajandek.Uzlet)}";
             }
             else
             {
