@@ -38,6 +38,7 @@ namespace mySqlAjandek
             this.lbl_uzlet = new System.Windows.Forms.Label();
             this.lbl_nev = new System.Windows.Forms.Label();
             this.lbl_id = new System.Windows.Forms.Label();
+            this.bttn_torles = new System.Windows.Forms.Button();
             this.grpBx_adatok.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +57,8 @@ namespace mySqlAjandek
             this.lstBx_ajandek.FormattingEnabled = true;
             resources.ApplyResources(this.lstBx_ajandek, "lstBx_ajandek");
             this.lstBx_ajandek.Name = "lstBx_ajandek";
+            this.lstBx_ajandek.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lstBx_ajandek_MouseClick);
+            this.lstBx_ajandek.SelectedIndexChanged += new System.EventHandler(this.lstBx_ajandek_SelectedIndexChanged);
             this.lstBx_ajandek.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lstBx_ajandek_MouseDoubleClick);
             // 
             // bttn_felvesz
@@ -89,11 +92,19 @@ namespace mySqlAjandek
             resources.ApplyResources(this.lbl_id, "lbl_id");
             this.lbl_id.Name = "lbl_id";
             // 
+            // bttn_torles
+            // 
+            resources.ApplyResources(this.bttn_torles, "bttn_torles");
+            this.bttn_torles.Name = "bttn_torles";
+            this.bttn_torles.UseVisualStyleBackColor = true;
+            this.bttn_torles.Click += new System.EventHandler(this.bttn_torles_Click);
+            // 
             // FormAjandek
             // 
             this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.bttn_torles);
             this.Controls.Add(this.grpBx_adatok);
             this.Controls.Add(this.bttn_felvesz);
             this.Controls.Add(this.lstBx_ajandek);
@@ -120,6 +131,7 @@ namespace mySqlAjandek
         private System.Windows.Forms.Label lbl_uzlet;
         private System.Windows.Forms.Label lbl_nev;
         private System.Windows.Forms.Label lbl_id;
+        private System.Windows.Forms.Button bttn_torles;
     }
 }
 

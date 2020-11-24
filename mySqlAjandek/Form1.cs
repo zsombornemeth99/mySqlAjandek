@@ -75,7 +75,7 @@ namespace mySqlAjandek
                     VALUES (@nev,@uzlet)";
 
                     insertComm.Parameters.AddWithValue("@nev", txtBx_nev.Text);
-                    insertComm.Parameters.AddWithValue("@uzlet", txtBx_uzlet.Text == "" ? "Saját készítésű" : txtBx_uzlet.Text);
+                    insertComm.Parameters.AddWithValue("@uzlet", txtBx_uzlet.Text == "" ? null : txtBx_uzlet.Text);
 
                     var muvelet = insertComm.ExecuteNonQuery();
                     if (muvelet >= 1)
@@ -92,6 +92,41 @@ namespace mySqlAjandek
         }
 
         private void lstBx_ajandek_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+
+            if (lstBx_ajandek.SelectedItem != null)
+            {
+                bttn_felvesz.Text = "Módosít";
+                Ajandek a = (Ajandek)lstBx_ajandek.SelectedItem;
+                txtBx_nev.Text = a.Nev;
+                if (a.Uzlet == null) txtBx_uzlet.Text = "Saját készítésű";
+                else txtBx_uzlet.Text = a.Uzlet;
+            }
+        }
+
+        private void lstBx_ajandek_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (lstBx_ajandek.SelectedItem != null)
+            {
+                var ajandek = (Ajandek)lstBx_ajandek.SelectedItem;
+                bttn_torles.Enabled = true;
+                lbl_id.Text = $"ID: {ajandek.Id}";
+                lbl_nev.Text = $"Név: {ajandek.Nev}";
+                lbl_uzlet.Text = $"Üzlet: {ajandek.Uzlet}";
+            }
+            else
+            {
+                bttn_torles.Enabled = false;
+                bttn_felvesz.Text = "Felvesz";
+                txtBx_nev.Text = "";
+                txtBx_uzlet.Text = "";
+                lbl_id.Text = "ID:";
+                lbl_nev.Text = "Név:";
+                lbl_uzlet.Text = "Üzlet:";
+            }
+        }
+
+        private void bttn_torles_Click(object sender, EventArgs e)
         {
             if (lstBx_ajandek.SelectedItem != null)
             {
@@ -113,10 +148,17 @@ namespace mySqlAjandek
                         MessageBox.Show("Sikeres törlés", "Siker!");
                         lstBx_ajandek.Items.Remove(lstBx_ajandek.SelectedItem);
                     }
-                    else MessageBox.Show("Nem sikerült az adatot törölni!", "Hiba!");                 
+                    else MessageBox.Show("Nem sikerült az adatot törölni!", "Hiba!");
                 }
 
             }
+        }
+
+        private void lstBx_ajandek_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            bttn_felvesz.Text = "Felvesz";
+            txtBx_nev.Text = "";
+            txtBx_uzlet.Text = "";
         }
     }
 }

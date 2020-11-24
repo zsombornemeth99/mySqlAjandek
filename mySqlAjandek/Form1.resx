@@ -81,7 +81,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtBx_nev.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="txtBx_uzlet.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>12, 45</value>
@@ -105,7 +105,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtBx_uzlet.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="lstBx_ajandek.ItemHeight" type="System.Int32, System.Private.CoreLib">
     <value>20</value>
@@ -129,7 +129,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;lstBx_ajandek.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="bttn_felvesz.Location" type="System.Drawing.Point, System.Drawing.Primitives">
     <value>12, 78</value>
@@ -153,7 +153,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;bttn_felvesz.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="lbl_uzlet.AutoSize" type="System.Boolean, System.Private.CoreLib">
     <value>True</value>
@@ -258,6 +258,33 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;grpBx_adatok.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bttn_torles.Enabled" type="System.Boolean, System.Private.CoreLib">
+    <value>False</value>
+  </data>
+  <data name="bttn_torles.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>234, 78</value>
+  </data>
+  <data name="bttn_torles.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>179, 40</value>
+  </data>
+  <data name="bttn_torles.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="bttn_torles.Text" xml:space="preserve">
+    <value>Elem törlése</value>
+  </data>
+  <data name="&gt;&gt;bttn_torles.Name" xml:space="preserve">
+    <value>bttn_torles</value>
+  </data>
+  <data name="&gt;&gt;bttn_torles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bttn_torles.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;bttn_torles.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
