@@ -89,6 +89,34 @@ namespace mySqlAjandek
                 }
                 else MessageBox.Show("Ellenőrízze, hogy mindent kitöltött e!", "Hiba!");
             }
+            else
+            {
+                if (txtBx_nev.Text != "")
+                {
+                    var insertComm = conn.CreateCommand();
+
+                    insertComm.CommandText = @"
+                    UPDATE ajandek
+                    SET nev=@nev,
+                        uzlet=@uzlet
+                    WHERE id=@id";
+                    var ajandek = (Ajandek)lstBx_ajandek.SelectedItem;
+                    insertComm.Parameters.AddWithValue("@id", ajandek.Id);
+                    insertComm.Parameters.AddWithValue("@nev", txtBx_nev.Text);
+                    insertComm.Parameters.AddWithValue("@uzlet", txtBx_uzlet.Text == "" ? null : txtBx_uzlet.Text);
+
+                    var muvelet = insertComm.ExecuteNonQuery();
+                    if (muvelet >= 1)
+                        MessageBox.Show("Sikeres módosítás", "Siker!");
+                    else
+                        MessageBox.Show("Nem sikerült az adatot módosítani!", "Hiba!");
+
+                    txtBx_nev.Text = "";
+                    txtBx_uzlet.Text = "";
+                    AdatBetoltes();
+                }
+                else MessageBox.Show("Ellenőrízze, hogy mindent kitöltött e!", "Hiba!");
+            }
         }
 
         private void lstBx_ajandek_MouseDoubleClick(object sender, MouseEventArgs e)
